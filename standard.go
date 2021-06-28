@@ -64,3 +64,7 @@ func (sbf *StandardBloom) Test(key string) bool {
 	}
 	return true
 }
+
+func (sbf *StandardBloom) Data() []byte {
+	return sbf.set
+}
