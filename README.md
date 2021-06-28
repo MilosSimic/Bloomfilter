@@ -7,10 +7,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/MilosSimic/bloomfilter"
 )
 
 func main() {
-	bf := New(300000, 0.01)
+	bf := bloomfilter.New(300000, 0.01)
 	bf.Add("Dog")
 	bf.Add("Cat")
 
