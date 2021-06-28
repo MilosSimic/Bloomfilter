@@ -1,4 +1,4 @@
-package main
+package bloomfilter
 
 type BloomFilter interface {
 	Add(key string)
